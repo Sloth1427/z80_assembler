@@ -1,0 +1,38 @@
+This is an example asm file for testing the assembler.
+
+Anything before the START assembler-instruction will be ignored.
+
+So this is a good place to put notes.
+
+NOTE: all numbers are in Hex. This is real programming.
+
+indents etc should be reasonably well tolerated.
+
+First line after START must be ORG statement
+
+
+START
+ORG (0000)
+
+
+;random comment
+
+(0000) <C3>    JP BEGIN
+(0001) <04>
+(0002) <00>
+(0003) <87>    ADD A, A
+(0004) <3E>    BEGIN: LD A,24 ; load acc with 24H
+(0005) <24>
+(0006) <DD>    LD (IX+FF), B
+(0007) <70>
+(0008) <FF>
+(0009) <16>    LD D, ARG1
+(000A) <46>
+(000B) <C6>    ADD A, FF ; comment
+(000C) <FF>
+(000D) <C3>    JP BEGIN
+(000E) <04>
+(000F) <00>
+(0010) <D9>    EXX
+
+END

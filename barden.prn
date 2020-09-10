@@ -1,0 +1,16 @@
+Assembly example from Barden
+
+START
+ORG (0100)
+
+(0100) <AF>    XOR A
+(0101) <06>    LD B, 0A
+(0102) <0A>
+(0103) <80>    LOOP: ADD A, B
+(0104) <05>    DEC B
+(0105) <C2>    JP NZ, LOOP
+(0106) <03>
+(0107) <01>
+(0108) <76>    HLT
+
+END
